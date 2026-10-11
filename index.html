@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#112e4a">
+  <meta name="description" content="EK Language Hub — Aprenda. Traduza. Comunique. Uma plataforma linguística para aprender e comunicar entre idiomas.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="EK Language Hub">
+  <title>EK Language Hub — Aprenda. Traduza. Comunique.</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-theme="light">
+  <a class="skip-link" href="#mainContent">Saltar para o conteúdo</a>
+  <header class="topbar">
+    <button class="brand-button" data-route="dashboard" aria-label="EK Language Hub, início">
+      <img src="./assets/ek-language-hub.svg" alt="">
+      <span class="brand-copy"><strong>EK <span>LANGUAGE HUB</span></strong><small>Aprenda. Traduza. Comunique.</small></span>
+    </button>
+    <button class="mobile-menu-button" id="mobileMenu" aria-label="Abrir navegação" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <div class="topbar-center"><span class="secure-dot"></span><span id="connectionLabel">Conteúdo disponível offline</span></div>
+    <div class="topbar-actions">
+      <button class="icon-control" data-action="toggle-theme" id="themeToggle" aria-label="Activar modo escuro" title="Alternar tema">☾</button>
+      <button class="install-control" id="installButton" hidden>Instalar app</button>
+      <button class="streak-pill" data-route="profile" title="Ver o teu progresso"><span>✦</span><b id="xpBadge">0 XP</b></button>
+      <button class="profile-control" data-route="profile" aria-label="Abrir o meu perfil"><span id="avatarInitials">EA</span></button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <div class="sidebar-label">ESPAÇO DE APRENDIZAGEM</div>
+      <nav class="sidebar-nav">
+        <button class="side-link active" data-route="dashboard"><span class="side-icon">⌂</span><span>Visão geral</span></button>
+        <button class="side-link" data-route="learn"><span class="side-icon">▤</span><span>Aprender idiomas</span><span class="nav-count">9</span></button>
+        <button class="side-link" data-route="translator"><span class="side-icon">⇄</span><span>Tradutor inteligente</span></button>
+        <button class="side-link" data-route="assistant"><span class="side-icon">✧</span><span>Tutor IA</span><span class="new-chip">IA</span></button>
+        <button class="side-link" data-route="dictionary"><span class="side-icon">Aa</span><span>Dicionário</span></button>
+        <button class="side-link" data-route="media"><span class="side-icon">◉</span><span>Voz e imagens</span></button>
+        <button class="side-link" data-route="creator"><span class="side-icon">✎</span><span>Criar conteúdo</span></button>
+        <button class="side-link" data-route="history"><span class="side-icon">◷</span><span>Histórico e guardados</span></button>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <button class="side-link premium-link" data-route="premium"><span class="side-icon">♛</span><span>Plano Premium</span></button>
+      <button class="side-link" data-route="profile"><span class="side-icon">◎</span><span>Perfil e certificados</span></button>
+      <button class="side-link admin-link" data-route="admin"><span class="side-icon">⚙</span><span>Painel de gestão</span></button>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-plan">
+        <div class="plan-top"><span>✦</span><span class="plan-mini-label">O TEU PLANO</span></div>
+        <strong id="sidebarPlanName">Gratuito</strong>
+        <p id="sidebarPlanText">Aprende uma palavra nova hoje.</p>
+        <button data-route="premium" class="text-button">Explorar Premium <span>→</span></button>
+      </div>
+      <div class="sidebar-footer"><span>EK LANGUAGE HUB</span><small>Criado por Edmilson Arlindo</small></div>
+    </aside>
+
+    <main id="mainContent" class="main-content" tabindex="-1" aria-live="polite">
+      <div class="loading-state"><div class="loader"></div><p>A preparar o teu espaço linguístico…</p></div>
+    </main>
+  </div>
+
+  <nav class="mobile-dock" aria-label="Navegação rápida">
+    <button data-route="dashboard" class="dock-link active"><span>⌂</span><small>Início</small></button>
+    <button data-route="learn" class="dock-link"><span>▤</span><small>Aprender</small></button>
+    <button data-route="translator" class="dock-link"><span>⇄</span><small>Traduzir</small></button>
+    <button data-route="assistant" class="dock-link"><span>✧</span><small>Tutor IA</small></button>
+    <button data-action="toggle-menu" class="dock-link"><span>•••</span><small>Mais</small></button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalRoot" aria-hidden="true"></div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

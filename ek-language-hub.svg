@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">EK Language Hub</title><desc id="desc">Emblema académico com chapéu, lâmpada, globo e livro aberto em azul-marinho, dourado e branco.</desc>
+<defs>
+  <linearGradient id="n" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1d4a69"/><stop offset="1" stop-color="#0b2038"/></linearGradient>
+  <linearGradient id="g" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#f5dc99"/><stop offset="1" stop-color="#c4963e"/></linearGradient>
+  <clipPath id="globe"><circle cx="256" cy="278" r="101"/></clipPath>
+</defs>
+<circle cx="256" cy="256" r="245" fill="url(#n)" stroke="url(#g)" stroke-width="13"/>
+<circle cx="256" cy="256" r="226" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+<!-- Graduation cap -->
+<path d="M134 117 256 65l122 52-122 52z" fill="url(#g)" stroke="#fff4d8" stroke-width="5" stroke-linejoin="round"/>
+<path d="M174 134v31q82 43 164 0v-31" fill="#d2a449" stroke="#fff4d8" stroke-width="4"/>
+<path d="M376 118v53" stroke="#f2d488" stroke-width="5" stroke-linecap="round"/><circle cx="376" cy="177" r="7" fill="#f2d488"/>
+<!-- Knowledge lamp -->
+<path d="M225 177c0-22 14-38 31-38s31 16 31 38c0 13-7 22-12 31l-4 10h-30l-4-10c-5-9-12-18-12-31z" fill="#f3d079" stroke="#fff0c5" stroke-width="4"/>
+<path d="M244 222h24m-21 9h18m-14 9h10" fill="none" stroke="#e8c16a" stroke-width="4" stroke-linecap="round"/>
+<path d="M256 126v-11m-41 26-7-8m89 8 7-8" stroke="#f3d079" stroke-width="4" stroke-linecap="round"/>
+<!-- Globe -->
+<circle cx="256" cy="278" r="105" fill="#f7fbfd" stroke="#d9b25b" stroke-width="7"/>
+<g clip-path="url(#globe)" fill="none" stroke="#2a7292" stroke-width="4" opacity=".9">
+  <ellipse cx="256" cy="278" rx="49" ry="101"/><ellipse cx="256" cy="278" rx="80" ry="101"/>
+  <path d="M151 278h210M166 239q90 28 180 0M166 317q90-28 180 0M199 185q57 22 114 0M199 371q57-22 114 0"/>
+</g>
+<path d="M206 261l25-20 21 10 9 24-17 8-7 20-20-10-11-20zM273 250l27-13 25 13 7 17-19 6-10 19-16-12z" fill="#2d7898" opacity=".82"/>
+<!-- Growth arrow -->
+<path d="m286 304 24-23 20 5 22-27m-11 1 11-1-1 12" fill="none" stroke="#c5953b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Lamp shown in front of the globe so the knowledge symbol stays visible at app-icon size -->
+<path d="M238 218 C238 202 246 193 256 193 C266 193 274 202 274 218 C274 227 269 232 266 239 L246 239 C243 232 238 227 238 218 Z" fill="#f3d079" stroke="#fff4d8" stroke-width="4"/>
+<path d="M246 244h20m-17 7h14" fill="none" stroke="#f3d079" stroke-width="4" stroke-linecap="round"/>
+<!-- Open book -->
+<path d="M75 355q85-25 170 9v84q-85-34-170-8zm362 0q-85-25-170 9v84q85-34 170-8z" fill="#fff" stroke="#e1bd68" stroke-width="6" stroke-linejoin="round"/>
+<path d="M256 365v87" stroke="#d6ad52" stroke-width="5"/>
+<path d="M95 374q63-15 131 9m-131 11q63-15 131 9m-131 11q63-15 131 9m191-49q-63-15-131 9m131 11q-63-15-131 9m131 11q-63-15-131 9" fill="none" stroke="#9db1be" stroke-width="4" stroke-linecap="round"/>
+</svg>
